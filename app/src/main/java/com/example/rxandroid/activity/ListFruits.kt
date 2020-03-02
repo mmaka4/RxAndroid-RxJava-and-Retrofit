@@ -251,14 +251,6 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
 
     }
 
-    private fun handleResponse(matundaList: ArrayList<Tunda>) {
-
-        mData = ArrayList(matundaList)
-        lfAdapter = ListFruitsAdapter(mData, applicationContext,this@ListFruits)
-
-        listFruitscyclerView.adapter = lfAdapter
-    }
-
     override fun onDestroy() {
         super.onDestroy()
 
