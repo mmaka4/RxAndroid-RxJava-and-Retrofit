@@ -50,7 +50,7 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
     lateinit var drawerLayout: DrawerLayout
     lateinit var navView: NavigationView
 
-    lateinit var matundaResponse : MatundaResponse
+    lateinit var matundaResponse: MatundaResponse
 
     val gson = Gson()
     private lateinit var userString: String
@@ -218,27 +218,27 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
 
                 Log.i("ResponseString", gson.toJson(it.matunda))
 
-                    shimmer_frame2.stopShimmer()
-                    shimmer_frame2.visibility = View.GONE
-                    listFruitscyclerView.visibility = View.VISIBLE
+                shimmer_frame2.stopShimmer()
+                shimmer_frame2.visibility = View.GONE
+                listFruitscyclerView.visibility = View.VISIBLE
 
                 mData = ArrayList()
 
-                    mData = it.matunda!!
+                mData = it.matunda!!
 
-                    lfAdapter =
-                        ListFruitsAdapter(
-                            mData,
-                            applicationContext,
-                            this@ListFruits
-                        )
+                lfAdapter =
+                    ListFruitsAdapter(
+                        mData,
+                        applicationContext,
+                        this@ListFruits
+                    )
 
-                    lfAdapter.notifyDataSetChanged()
+                lfAdapter.notifyDataSetChanged()
 
-                    listFruitscyclerView.adapter = lfAdapter
+                listFruitscyclerView.adapter = lfAdapter
 
-            } , {
-//                Toast.makeText(applicationContext, matundaResponse.message, Toast.LENGTH_SHORT)
+            }, {
+                //                Toast.makeText(applicationContext, matundaResponse.message, Toast.LENGTH_SHORT)
                 Log.i("ResponseFailure", it.message)
             })
 
@@ -252,8 +252,7 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
     override fun onDestroy() {
         super.onDestroy()
 
-//Clear all your disposables//
-
+        //Clear all your disposables//
         myCompositeDisposable?.clear()
 
     }
