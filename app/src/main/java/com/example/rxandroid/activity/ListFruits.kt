@@ -251,8 +251,7 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
 
     override fun onDestroy() {
         super.onDestroy()
-
-        //Clear all your disposables//
+        //Clear all your disposables
         myCompositeDisposable?.clear()
 
     }
