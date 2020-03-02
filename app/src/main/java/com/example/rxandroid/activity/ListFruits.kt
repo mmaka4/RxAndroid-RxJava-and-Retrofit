@@ -206,7 +206,6 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build()
-//                .create(ServerApi::class.java)
 
         val api = retrofit.create(ServerApi::class.java)
 
@@ -249,47 +248,6 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
 //            .subscribe(System.out::println))
 
         val gson = Gson()
-
-//        call.enqueue(object : Callback<MatundaResponse> {
-//
-//            override fun onResponse(
-//                call: Call<MatundaResponse>,
-//                response: Response<MatundaResponse>
-//            ) {
-//                if (response.isSuccessful) {
-//                    Log.i("ResponseString", gson.toJson(response.body()))
-//
-//                    shimmer_frame2.stopShimmer()
-//                    shimmer_frame2.visibility = View.GONE
-//                    listFruitscyclerView.visibility = View.VISIBLE
-//
-//
-//                    mData = ArrayList()
-//
-//                    mData = response.body()?.matunda!!
-//
-//                    lfAdapter =
-//                        ListFruitsAdapter(
-//                            mData,
-//                            applicationContext,
-//                            this@ListFruits
-//                        )
-//
-//                    lfAdapter.notifyDataSetChanged()
-//
-//                    listFruitscyclerView.adapter = lfAdapter
-//
-////                    response.body()?.matunda
-//                } else {
-//                    //to catch
-//                }
-//            }
-//
-//            override fun onFailure(call: Call<MatundaResponse>, t: Throwable) {
-//                Log.i("ResponseFailure1", t.message)
-//            }
-//
-//        })
 
     }
 
