@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">RxAndroid</string>
+
+    <string name="serverURL">http://192.168.43.233/battlefield/slimapp/public/</string>
+    <string name="imageFruitsURL">http://192.168.43.233/battlefield/images/fruits/</string>
+    <string name="userImageURL">http://192.168.43.233/battlefield/slimapp/public/imagefolder/</string>
+    <string name="imageFoodsURL">http://192.168.43.233/battlefield/images/foods/</string>
+    <string name="restApiURL">http://dummy.restapiexample.com</string>
+    <string name="hintUsername">Email/User name</string>
+    <string name="hintPassword">Password</string>
+    <string name="loginTet">login</string>
+    <string name="signupText">Sign Up</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirmation</string>
+    <string name="update">Update</string>
+    <string name="register">Register</string>
+    <string name="delete">Delete</string>
+    <string name="fruitName">Fruit name</string>
+    <string name="fruitPrice">Fruit price</string>
+    <string name="dialogMessage">Do yo really want to delete this item</string>
+    <string name="dialogTitle">Delete an item</string>
+
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+    <string name="error_login">The username or password incorrect</string>
+
+    //Error messages
+    <string name="emailRequired">Please enter your Email</string>
+    <string name="passwordRequired">Please enter your Password</string>
+</resources>

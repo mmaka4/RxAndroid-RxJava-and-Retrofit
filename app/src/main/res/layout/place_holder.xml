@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingStart="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/img">
+
+        <ImageView
+            android:id="@+id/fruitImage"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:background="@color/grey" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/grey">
+
+        <TextView
+            android:id="@+id/fruitName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="1dp"
+            android:text=""
+            android:textSize="13.5sp"
+            android:layout_marginTop="1dp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey">
+
+                <TextView
+                    android:id="@+id/fruitPrice"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:background="@color/gray"
+                    />
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

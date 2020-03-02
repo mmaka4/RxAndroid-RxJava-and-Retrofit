@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="114dp"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/img">
+
+        <ImageView
+            android:id="@+id/fruitImage"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banana" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/img"
+        android:id="@+id/properties">
+
+        <TextView
+            android:id="@+id/fruitName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="1dp"
+            android:text="Matunda"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="1dp"/>
+
+        <TextView
+            android:id="@+id/fruitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="3dp"
+            android:paddingEnd="3dp"
+            android:layout_marginBottom="2dp"
+            android:text="2000 Tsh"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@id/fruitName"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:id="@+id/editIconLayout"
+            android:gravity="center"
+            android:background="@color/shadowblue">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_create_black_24dp"
+                android:background="@color/shadowblue"
+                android:tint="@color/white"
+                android:id="@+id/edit"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:id="@+id/deleteIconLayout"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_delete_forever_black_24dp"
+                android:background="@color/colorAccent"
+                android:tint="@color/white"
+                android:id="@+id/delete"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

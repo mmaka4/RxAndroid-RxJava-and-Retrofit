@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/shadowDarkblue"
+        android:id="@+id/header">
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/lady"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            app:view_shadowRadius="4dp"
+            app:view_shadowDx="0dp"
+            app:view_shadowDy="1.5dp"
+            app:view_shadowColor="@color/grey"
+            app:view_borderWidth="0dp"
+            app:view_selectedColor="@color/blue"
+            app:view_backgroundColor="@color/colorAccent"
+            app:view_borderColor="@color/blue"
+            android:id="@+id/user_profilepic"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dorice89@gmail.com"
+            android:layout_below="@id/user_profilepic"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/user_email"/>
+    </RelativeLayout>
+
+</LinearLayout>

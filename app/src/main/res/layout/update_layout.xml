@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.98"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/content">
+
+        <RelativeLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:padding="20dp"
+            android:id="@+id/profileLayout">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/shadowblue"
+                app:contentPadding="4dp"
+                android:elevation="2dp"
+                app:cardElevation="9dp">
+
+                <ImageView
+                    android:id="@+id/foodImage"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/food1" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileLayout"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/fruitName"
+            app:boxStrokeColor="@color/shadowblue"
+            android:textColorHint="@color/grey"
+            android:id="@+id/fruitnameLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:id="@+id/fruitName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:theme="@style/TextInputLayoutAppearance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fruitnameLayout"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/fruitPrice"
+            app:boxStrokeColor="@color/shadowblue"
+            android:textColorHint="@color/grey"
+            android:id="@+id/lastname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:id="@+id/fruitPrice"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update_button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastname"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="100dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.5"
+            android:textSize="16sp"
+            android:backgroundTint="@color/shadowblue"
+            android:textColor="@color/white"
+            android:text="Update"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape2"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:id="@+id/backLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tint="@color/white"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

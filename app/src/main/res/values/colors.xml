@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="grey">#778899</color>
+    <color name="blue">#0f52ba</color>
+    <color name="shadowblue">#0abab5</color>
+    <color name="shadowDarkblue">#40e0d0</color>
+    <color name="white">#ffffff</color>
+    <color name="startGrad">#f857a6</color>
+    <color name="endGrad">#ff5858</color>
+    <color name="tendGrad">#83EAF1</color>
+    <color name="blue2">#5D8AA8</color>
+    <color name="gray">#9ca9aa</color>
+    <color name="gray3">#eeeeee</color>
+    <color name="black">#000</color>
+    <color name="red">#ff3232</color>
+
+    <color name="user_input_color">#000</color>
+    <color name="unfocused_color">#778899</color>
+    <color name="green">#00574B</color>
+
+</resources>
