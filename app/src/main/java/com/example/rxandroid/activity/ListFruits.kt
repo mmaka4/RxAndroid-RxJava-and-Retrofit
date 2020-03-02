@@ -247,8 +247,6 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
 //            .subscribeOn(Schedulers.io())
 //            .subscribe(System.out::println))
 
-        val gson = Gson()
-
     }
 
     override fun onDestroy() {
