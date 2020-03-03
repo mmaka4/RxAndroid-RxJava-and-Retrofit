@@ -241,7 +241,9 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
                 listFruitscyclerView.adapter = lfAdapter
 
             }, {
-                //                Toast.makeText(applicationContext, matundaResponse.message, Toast.LENGTH_SHORT)
+
+                //on error
+//                Toast.makeText(applicationContext, it.message, Toast.LENGTH_SHORT)
                 Log.i("ResponseFailure", it.message)
             })
 
