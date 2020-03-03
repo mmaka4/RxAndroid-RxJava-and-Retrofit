@@ -85,6 +85,7 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
         val imgUrl = ""
 //        Log.i("imageURL", imgUrl)
 
+        //set image to drawer Layout
         if (imgUrl.isEmpty()) { //url.isEmpty()
             Picasso.get()
                 .load(R.drawable.profile_pic2)
