@@ -215,6 +215,8 @@ class ListFruits : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
             .unsubscribeOn(Schedulers.computation())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
+
+                //on success
                 matundaResponse = it
 
                 Log.i("ResponseString", gson.toJson(it.matunda))
